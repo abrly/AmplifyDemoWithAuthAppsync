@@ -1,0 +1,35 @@
+<section>
+    <button class="btn btn-primary" (click)="onGetBook()">Get Book</button>
+
+    <button class="btn btn-primary" (click)="onNewBook()">Add New Book</button>
+</section>
+
+
+@if(myBook?.bookId){
+
+    <section>
+        <h2>Book Detaiils</h2>
+    
+        ID:
+    
+        {{ myBook!.bookId }}
+    
+        Author:
+    
+    
+        {{ myBook!.author }}
+    
+        Desc:
+    
+    
+        {{ myBook!.description }}
+    
+        Price:
+    
+        {{ myBook!.price }}
+    
+    </section>
+
+}
+
+

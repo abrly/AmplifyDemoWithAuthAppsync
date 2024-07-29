@@ -1,0 +1,46 @@
+# this is an auto generated file. This will be overwritten
+
+query GetBookById($bookid: ID!) {
+  getBookById(bookid: $bookid) {
+    bookId
+    title
+    description
+    imageUrl
+    author
+    price
+    createdAt
+    updatedAt
+    __typename
+  }
+}
+
+query ListBooks($limit: Int!, $nextToken: String) {
+  listBooks(limit: $limit, nextToken: $nextToken) {
+    books {
+      bookId
+      title
+      description
+      imageUrl
+      author
+      price
+      createdAt
+      updatedAt
+      __typename
+    }
+    nextToken
+    __typename
+  }
+}
+
+query MyOrders($limit: Int!, $nextToken: String) {
+  myOrders(limit: $limit, nextToken: $nextToken) {
+    orderItems {
+      userId
+      orderId
+      quantity
+      __typename
+    }
+    nextToken
+    __typename
+  }
+}

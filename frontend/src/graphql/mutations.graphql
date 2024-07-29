@@ -1,0 +1,19 @@
+# this is an auto generated file. This will be overwritten
+
+mutation CreateBook($newBook: BookInput) {
+  createBook(newBook: $newBook) {
+    bookId
+    title
+    description
+    imageUrl
+    author
+    price
+    createdAt
+    updatedAt
+    __typename
+  }
+}
+
+mutation CreateOrder($newOrder: OrderInput) {
+  createOrder(newOrder: $newOrder)
+}

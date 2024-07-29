@@ -1,0 +1,14 @@
+<amplify-authenticator>
+
+  <ng-template amplifySlot="authenticated">
+
+    <button class="btn btn-primary" (click)="authService.signOut()">Sign-Out</button>
+    
+    <hr>
+   
+    <router-outlet />
+
+  </ng-template>
+
+</amplify-authenticator> 
+
